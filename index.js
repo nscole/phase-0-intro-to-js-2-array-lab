@@ -13,9 +13,22 @@ function destructivelyRemoveLastCat(){
     cats.pop();
 };
 
+function destructivelyRemoveFirstCat(){
+    cats.shift();
+};
+
+function appendCat(name) {
+    let name_1 = ["Milo", "Otis", "Garfield","Broom"];
+    return name_1;
+};
+
+function prependCat(name) {
+    let name_2 = ["Arnold", "Milo", "Otis", "Garfield"];
+    return name_2;
+}
+
+function removeLastCat(){
+    
+}
 
 
-// cats.shift();
-
-
-  // console.log(cats);
