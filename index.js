@@ -8,14 +8,18 @@ function destructivelyPrependCat(name){
     cats.unshift(name = 'Bob');
 };
 
+function destructivelyRemoveLastCat(){
+    cats.pop();
+};
+
 
 
 /* 
-describe('destructivelyPrependCat(name)', function () {
-    it('prepends a cat to the beginning of the cats array', function () {
-        destructivelyPrependCat("Bob");
+describe('destructivelyRemoveLastCat()', function () {
+      it('removes the last cat from the cats array', function () {
+        destructivelyRemoveLastCat();
 
-        expect(cats).to.have.ordered.members(["Bob", "Milo", "Otis", "Garfield"]);
+        expect(cats).to.have.ordered.members(["Milo", "Otis"]).and.to.not.include('Garfield');
       });
     });
 */
