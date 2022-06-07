@@ -12,14 +12,18 @@ function destructivelyRemoveLastCat(){
     cats.pop();
 };
 
+function destructivelyRemoveFirstCat(){
+    cats.shift();
+};
+
 
 
 /* 
-describe('destructivelyRemoveLastCat()', function () {
-      it('removes the last cat from the cats array', function () {
-        destructivelyRemoveLastCat();
+describe('destructivelyRemoveFirstCat()', function () {
+      it('removes the first cat from the cats array', function () {
+        destructivelyRemoveFirstCat();
 
-        expect(cats).to.have.ordered.members(["Milo", "Otis"]).and.to.not.include('Garfield');
+        expect(cats).to.have.ordered.members(["Otis", "Garfield"]).and.to.not.include('Milo');
       });
     });
 */
