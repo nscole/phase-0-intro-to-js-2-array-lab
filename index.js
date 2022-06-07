@@ -26,12 +26,9 @@ function prependCat(){
         return name_2;
 }
 
-/* 
-describe('prependCat(name)', function () {
-      it('prepends a cat to the cats array and returns a new array, leaving the cats array unchanged', function () {
-        expect(prependCat("Arnold")).to.have.ordered.members(["Arnold", "Milo", "Otis", "Garfield"]);
 
-        expect(cats).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
-      });
-    });
-*/
+function removeLastCat(){
+    let kittens = cats.slice(0,cats.length-1);
+    return kittens;
+}
+
