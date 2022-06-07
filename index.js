@@ -24,11 +24,15 @@ function appendCat(){
 function prependCat(){
     let name_2 = ["Arnold", "Milo", "Otis", "Garfield"];
         return name_2;
-}
+};
 
 
 function removeLastCat(){
     let kittens = cats.slice(0,cats.length-1);
     return kittens;
-}
+};
 
+function removeFirstCat (){
+    let kittens = cats.slice(1);
+    return kittens;
+};
